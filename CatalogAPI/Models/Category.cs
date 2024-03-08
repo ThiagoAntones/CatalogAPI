@@ -22,6 +22,6 @@ public class Category
     [Required]
     [StringLength(300)]
     public string? ImageUrl { get; set; }
-
+    [JsonIgnore]
     public ICollection<Product>? Products { get; set; }
 }
